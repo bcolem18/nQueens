@@ -13,6 +13,7 @@ using namespace std;
 
 
 int N; 
+int numThreads; 
 
 int Call(int col, int rowM, int dia1, int dia2) 
 {
@@ -72,10 +73,13 @@ int Call(int col, int rowM, int dia1, int dia2)
                                 
             int main(int argc, char ** argv)
             {
-                if(argc==2)
+                if(argc==3)
                 {
                 
+                
                 N=atof(argv[1]); 
+                numThreads=atof(argv[1]); 
+                omp_set_num_threads(numThreads);
                 double ptime= parallel(); 
                 
                 }
