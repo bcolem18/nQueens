@@ -1,0 +1,20 @@
+
+g++ --std=c++11 -fopenmp -O3 -march=native nQueens.cpp -o N.exe
+
+
+
+./N.exe 16 1
+
+
+./N.exe 16 2
+
+
+./N.exe 16 4
+
+
+./N.exe 16 8
+
+
+./N.exe 16 16
+
+
